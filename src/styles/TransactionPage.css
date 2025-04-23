@@ -1,0 +1,186 @@
+/* Transaction Items */
+.transaction-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    border-bottom: 1px solid #444;
+    background-color: #2D2D2D;
+  }
+  
+  .transaction-item-category span {
+    color: white;
+    font-size: 1rem;
+  }
+  
+  .transaction-item-details {
+    text-align: right;
+  }
+  
+  .transaction-amount {
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+  
+  .transaction-amount.income {
+    color: #48BB78;
+  }
+  
+  .transaction-amount.expense {
+    color: #F56565;
+  }
+  
+  .transaction-date {
+    color: #A0AEC0;
+    font-size: 0.8rem;
+    margin-top: 4px;
+  }
+  
+  /* Transactions Container */
+  .transactions-container {
+    padding: 0px;
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .transactions-wrapper {
+    width: 90%;
+    max-width: 800px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Transactions Header */
+  .transactions-header {
+    background-color: #3D3D3D;
+    padding: 15px 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-bottom: 5px;
+  }
+  
+  .transactions-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .transactions-title span {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  
+  .transactions-count {
+    color: #A0AEC0;
+    font-size: 0.9rem;
+  }
+  
+  .total-amount {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .total-value {
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+  
+  .total-value.positive {
+    color: #48BB78;
+  }
+  
+  .total-value.negative {
+    color: #F56565;
+  }
+  
+  /* Transactions List */
+  .transactions-list {
+    background-color: #2D2D2D;
+    border-radius: 8px;
+    flex: 1;
+    overflow: auto;
+  }
+  
+  /* Add Transaction Modal */
+  .add-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .add-modal-content {
+    background-color: #2D2D2D;
+    padding: 25px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+  }
+  
+  .add-modal-content h3 {
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .modal-input-group {
+    margin-bottom: 15px;
+  }
+  
+  .modal-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    background-color: #3D3D3D;
+    color: white;
+  }
+  
+  .modal-button-group {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .modal-button {
+    flex: 1;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .modal-button.confirm {
+    background-color: #48BB78;
+  }
+  
+  .modal-button.cancel {
+    background-color: #F56565;
+  }
+  .transaction-meta {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 0.9em;
+    color: #666;
+  }
+  
+  .transaction-account {
+    font-style: italic;
+  }
+  
+  .modal-input-group:not(:last-child) {
+    margin-bottom: 15px;
+  }

@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.app-container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .main-content {
+    flex: 1;
+    margin-left: 240px;
+    padding: 2rem;
+    background-color: rgb(58, 57, 57);
+    min-height: 100vh;
+  }
+  .main-content1 {
+    flex: 1;
+    /* margin-left: 200px; */
+    padding: 2rem;
+    background-color: rgb(58, 57, 57);
+    min-height: 100vh;
+  }
+  
+  .page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .dashboard-header {
+    background: #4f4c4c; 
+    height: 60px;     
+    position: fixed;
+    top:0;
+    left: 240px;
+    right:0;
+    width: 100;
+    z-index: 1000;
+    border-bottom: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+  }
+  
+
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.amount-negative {
+  color: #e53e3e;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.progress-container {
+  position: relative;
+  height: 6px;
+  background-color: #f0f2f5;
+  border-radius: 3px;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #e53e3e;
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.percentage-text {
+  margin-top: 0.5rem;
+  color: #718096;
+  font-size: 0.9rem;
+  text-align: right;
+}
+
+.chart-tooltip {
+  position: absolute;
+  background: #2d3748;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 100;
+}
+
+/* Floating Buttons Styles */
+.floating-buttons-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.floating-button {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: none;
+  background-color: #48bb78;
+}
+
+.floating-button.subtract {
+  background-color: #e53e3e;
+}
+
+.floating-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.floating-button-icon {
+  color: white;
+  font-size: 28px;
+  font-weight: 300;
+  user-select: none;
+}
+
+.main-content-with-floating {
+  margin-bottom: 80px !important;
+}
+
+/* LoginPage.css */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.login-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.input {
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.button {
+  padding: 0.8rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.switch-text {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #666;
+}
+
+.link {
+  color: #2563eb;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.error {
+  color: red;
+  font-size: 0.8rem;
+}
+
+
