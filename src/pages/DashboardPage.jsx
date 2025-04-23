@@ -17,7 +17,7 @@ const DashboardPage = () => {
       const token = localStorage.getItem("token");
       try {
         const response = await axios.get(
-          "http://127.0.0.1:8000/tracker/accounts/",
+          "https://inctra-backend-00di.onrender.com/tracker/accounts/",
           {
             headers: { Authorization: `Bearer ${token}` },
           }
@@ -38,7 +38,7 @@ const DashboardPage = () => {
       const token = localStorage.getItem("token");
       try {
         const response = await axios.get(
-          "http://127.0.0.1:8000/tracker/monthly-totals/",
+          "https://inctra-backend-00di.onrender.com/tracker/monthly-totals/",
           {
             headers: { Authorization: `Bearer ${token}` },
           }
@@ -56,7 +56,7 @@ const DashboardPage = () => {
       const token = localStorage.getItem("token");
       try {
         const response = await axios.get(
-          "http://127.0.0.1:8000/tracker/accounts/",
+          "https://inctra-backend-00di.onrender.com/tracker/accounts/",
           {
             headers: { Authorization: `Bearer ${token}` },
           }
@@ -393,7 +393,7 @@ const BarChart = () => {
       const token = localStorage.getItem("token");
       try {
         const response = await axios.get(
-          "http://127.0.0.1:8000/tracker/daily-totals/",
+          "https://inctra-backend-00di.onrender.com/tracker/daily-totals/",
           {
             headers: { Authorization: `Bearer ${token}` },
           }

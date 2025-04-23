@@ -13,7 +13,7 @@ const AccountsPage = () => {
   const fetchData = async () => {
     const Accesstoken = localStorage.getItem("token");
     try {
-      const response = await fetch("http://127.0.0.1:8000/tracker/accounts/", {
+      const response = await fetch("https://inctra-backend-00di.onrender.com/tracker/accounts/", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -53,7 +53,7 @@ const AccountsPage = () => {
     console.log(selectedAccount);
     try {
       await axios.patch(
-        `http://127.0.0.1:8000/tracker/accounts/${docId}/`,
+        `https://inctra-backend-00di.onrender.com/tracker/accounts/${docId}/`,
         {
           [selectedAccount]: parseFloat(amount),
         },

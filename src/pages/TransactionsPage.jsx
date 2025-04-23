@@ -55,7 +55,7 @@ const TransactionsPage = () => {
       const token = localStorage.getItem("token");
       try {
         const response = await fetch(
-          "http://localhost:8000/tracker/transactions/",
+          "https://inctra-backend-00di.onrender.com/tracker/transactions/",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -86,7 +86,7 @@ const TransactionsPage = () => {
 
       try {
         const response = await fetch(
-          "http://localhost:8000/tracker/transactions/",
+          "https://inctra-backend-00di.onrender.com/tracker/transactions/",
           {
             method: "POST",
             headers: {
